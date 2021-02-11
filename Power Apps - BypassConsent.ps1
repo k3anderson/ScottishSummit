@@ -25,10 +25,8 @@ App ID and whether you want to bypass consent
 #Get values from Power Automate
 param
 (   
-    [Parameter(Mandatory = $true)]
-    [string]$AppID,
-    [Parameter(Mandatory = $true)]
-    [string]$RemoveConsent
+    [Parameter(Mandatory = $true)][string]$AppID,
+    [Parameter(Mandatory = $true)][boolean]$RemoveConsent
 )
 
 #Get the credentials stored in Azure - 'AdminCred'
